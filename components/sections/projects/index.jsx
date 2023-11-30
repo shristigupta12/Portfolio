@@ -10,7 +10,7 @@ const Projects = () => {
         <div className="flex flex-col gap-18 bg-neutral-800 text-neutral-100 w-full p-6 overflow-x-hidden" id="projects">
             <ViewContainer className="max-2xl:w-[1050px]">
                 <h1 className="font-semibold text-5xl ">Projects</h1>
-                <div className="grid gap-12 w-full my-7">
+                <div className="grid gap-20 w-full my-7">
                     {ProjectsData.map((project, index)=>(
                         <div key={index} className="flex justify-center items-center gap-12">
                             {/* <Link href={project.link} className="block"> */}
@@ -23,7 +23,7 @@ const Projects = () => {
                                 <p className="text-justify">{project.desc}</p>
                                 <div key={index} className="flex gap-3 justify-center">
                                     {project.techStack.map((tech, index)=>(
-                                        <Badge variant="default" key={index} className="bg-neutral-300 text-neutral-700 cursor-pointer hover:bg-neutral-200 hover:text-neutral-900 hover:scale-105">{tech}</Badge>
+                                        <Badge variant="outline" key={index} className=" cursor-pointer hover:bg-neutral-200 hover:text-neutral-900 hover:scale-105">{tech}</Badge>
                                     ))}
                                 </div>
                                 <Link href={project.githubLink} target="_blank">

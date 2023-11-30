@@ -13,7 +13,7 @@ const Skills = () => {
                             <p className="font-semibold text-neutral-600">{skill.domain}</p>
                             <div className="flex gap-6">
                                 {skill.skillSets.map((skillset, iconIndex)=>(
-                                    <i className={cn("text-5xl text-neutral-800 hover:scale-95", skillset)} key={iconIndex}></i>
+                                    <i className={cn("text-5xl text-neutral-800 hover:scale-110", skillset)} key={iconIndex}></i>
                                 ))}
                             </div>
                         </div>

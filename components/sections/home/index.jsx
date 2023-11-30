@@ -2,11 +2,12 @@
 import { ViewContainer } from "@/components/layouts/view-container"
 import Image from "next/image"
 import { Button } from "@/components/ui/button"
+import Link from 'next/link'
 
 
 const Home = ()=>{
     return(
-        <ViewContainer>
+        <ViewContainer id="home">
         <section className="flex h-full justify-center gap-12">
             <div className="flex flex-col gap-12 text-neutral-700  ">
                 <div className="flex flex-col gap-3 font-semibold text-5xl font-sans">
@@ -17,9 +18,9 @@ const Home = ()=>{
                     <p>A passionate frontend engineer with a love for creating seamless and engaging user experiences.</p>
                     <p>From crafting elegant code to exploring the world of algorithms.</p>
                     <p>I thrive on turning ideas into reality.</p>
-                    <p>
-                        <Button variant="primary" className="bg-neutral-800 text-neutral-100 hover:underline transition-all">{"Resume ->"}</Button>
-                    </p>
+                    <Link href="https://drive.google.com/file/d/1Avm5cspVJP_fU8GchwnuHG5OkhYdXg0X/view?usp=drive_link" target="_blank">
+                    <Button variant="primary" className="bg-neutral-800 w-fit text-neutral-100 rounded-lg transition-all hover:scale-105">{"Resume ->"}</Button>
+                    </Link>
                 </div>
             </div>
                 <Image src={'/utils/profile.jpeg'} alt="avatar" width={'300'} height={'400'} className="rounded-xl shadow-xl shadow-neutral-200"/>

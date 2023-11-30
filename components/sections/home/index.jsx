@@ -6,7 +6,8 @@ import { Button } from "@/components/ui/button"
 
 const Home = ()=>{
     return(
-        <section className="flex h-full justify-center gap-2">
+        <ViewContainer>
+        <section className="flex h-full justify-center gap-12">
             <div className="flex flex-col gap-12 text-neutral-700  ">
                 <div className="flex flex-col gap-3 font-semibold text-5xl font-sans">
                     <h1 >Hey there,</h1>
@@ -21,11 +22,9 @@ const Home = ()=>{
                     </p>
                 </div>
             </div>
-            
-                <Image src={'/utils/profile.jpeg'} alt="avatar" width={'300'} height={'400'}/>
-                
-            
+                <Image src={'/utils/profile.jpeg'} alt="avatar" width={'300'} height={'400'} className="rounded-xl shadow-xl shadow-neutral-200"/>
         </section>
+        </ViewContainer>
     )
 }
 

@@ -7,12 +7,13 @@ import {
     DropdownMenuSeparator,
     DropdownMenuTrigger,
   } from "@/components/ui/dropdown-menu"
+  import { cn } from "@/lib/utils"
 
 const Navbar = ()=>{
     return(
-        <ViewContainer className="flex py-3  sticky top-0">
-        <nav className="w-full rounded-full border-2 border-neutral-200 backdrop-blur-sm opacity-80 bg-white p-4 max-[500px]:px-2 max-[500px]:py-4 items-center">
-            <ul className="flex  gap-10 max-[500px]:gap-4 max-[400px]:gap-2 justify-end max-[500px]:justify-center text-neutral-700 max-[400px]:hidden ">
+        <ViewContainer className={cn("view-container sticky top-3")}>
+            <nav className="flex w-full rounded-full border-2 border-neutral-200 backdrop-blur-sm opacity-80 bg-white p-4 max-[500px]:px-2 max-[500px]:py-4 items-center">
+            <ul className="flex  gap-10 max-[500px]:gap-4 max-[400px]:gap-2 w-full justify-end max-[500px]:justify-center text-neutral-700 max-[400px]:hidden ">
                 <li className="cursor-pointer hover:underline hover:text-neutral-900">Home</li>
                 <li className="cursor-pointer hover:underline hover:text-neutral-900">Skills</li>
                 <li className="cursor-pointer hover:underline hover:text-neutral-900">Projects</li>
@@ -29,8 +30,9 @@ const Navbar = ()=>{
             </DropdownMenuContent>
             </DropdownMenu>
             </div>
-        </nav> 
+        </nav>
         </ViewContainer>
+         
     )
 }
 export {Navbar}

@@ -1,13 +1,12 @@
 'use client'
+import { Home } from "@/components/sections/home"
+import { Projects } from "@/components/sections/projects"
 
-import { Home } from "./home/page"
-import { Projects } from "./projects/page"
-
-export default function app() {
+export default function App() {
   return (
-    <main>
+    <>
       <Home />
       <Projects />
-    </main>
+    </>
   )
 }

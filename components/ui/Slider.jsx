@@ -24,7 +24,7 @@ const Slider = () =>{
                 {Projects.map((project, index) => (
                     <div className="w-screen h-full px-5 flex gap-3 justify-center text-white items-center" key={index}>
                         <div className="cursor-pointer w-full">
-                            <Image src={project.img}  width={'500'} height={'500'} />
+                            <Image src={project.img}  width={'500'} height={'500'} alt="project-image" />
                         </div>
                         <div className="flex flex-col gap-3 px-8">
                             <h1 className="text-3xl font-semibold">{project.name}</h1>

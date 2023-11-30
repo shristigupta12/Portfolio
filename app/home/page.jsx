@@ -12,7 +12,7 @@ const Home = ()=>{
                     <div className="flex  w-full flex-col gap-12 text-neutral-700">
                         <div className="flex flex-col gap-3 font-semibold text-5xl font-sans">
                             <h1 >Hey there,</h1>
-                            <h1>I'm Shristi Gupta</h1>
+                            <h1>{`I'm Shristi Gupta`}</h1>
                         </div>
                         <div className="flex gap-5 flex-col">
                             <p>A passionate frontend engineer with a love for creating seamless and engaging user experiences.</p>

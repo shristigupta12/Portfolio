@@ -39,10 +39,10 @@ const Navbar = ()=>{
                     </Link>
                 ))}
             </ul>
-            <div className="flex text-neutral-700 min-[400px]:hidden justify-center">
+            <div className="flex text-neutral-700 min-[400px]:hidden justify-center backdrop-blur-sm opacity-100 bg-white">
             <DropdownMenu >
             <DropdownMenuTrigger className="cursor-pointer hover:underline hover:text-neutral-900">Menu</DropdownMenuTrigger>
-            <DropdownMenuContent className="backdrop-blur-sm opacity-80 bg-white">
+            <DropdownMenuContent className=" rounded-md">
                 {navItems.map((item, index)=>(
                     <Link href={item.link} key={index}>
                     <DropdownMenuItem className="cursor-pointer hover:bg-neutral-900 hover:text-white px-3 py-1.5 rounded-full">{item.name}</DropdownMenuItem>

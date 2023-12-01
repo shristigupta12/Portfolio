@@ -8,7 +8,7 @@ import Link from 'next/link'
 const Home = ()=>{
     return(
         <ViewContainer id="home">
-        <section className="flex h-full justify-center gap-12 max-md:flex-col">
+        <section className="flex h-full justify-center gap-12 max-md:flex-col max-md:mt-[-40px]">
             <div className="flex flex-col gap-12 text-neutral-700  ">
                 <div className="flex flex-col gap-3 font-semibold text-5xl font-sans">
                     <h1 >Hey there,</h1>

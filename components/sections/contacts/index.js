@@ -7,7 +7,7 @@ import { ContactData } from "@/public/data/contacts-data"
 const Contacts = () =>{
     return(
         <footer id="contacts" className="flex flex-col gap-18 bg-neutral-800 text-neutral-100 w-full p-6 overflow-x-hidden">
-            <ViewContainer className="grid gap-24">
+            <ViewContainer className="grid gap-16">
                 <div className="grid font-semibold text-4xl gap-2">
                 <h1 >Want to get in touch?</h1>
                 <Link href="mailto:shristigupta12@gmail.com">

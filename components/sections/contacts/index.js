@@ -22,7 +22,7 @@ const Contacts = () =>{
                     <div className="grid grid-cols-3 gap-3">
                     {ContactData.map((contact, index)=>(
                         <Link href={contact.link} key={index} target="_blank">
-                            <Button className="flex gap-1 hover:scale-110 ">
+                            <Button className="flex gap-1 hover:scale-110 max-md:px-1 max-md:py-0.5 ">
                                 <p className="max-md:text-xs">{contact.media}</p>
                                 {contact.icon}
                             </Button>

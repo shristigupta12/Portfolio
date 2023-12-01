@@ -19,7 +19,7 @@ const Home = ()=>{
                     <p>From crafting elegant code to exploring the world of algorithms.</p>
                     <p>I thrive on turning ideas into reality.</p>
                     <Link href="https://drive.google.com/file/d/1QaHS9L0vimQDfxEwSGEEyg46MxQ5tBvt/view?usp=drive_link" target="_blank">
-                    <Button variant="primary" className="bg-neutral-800 w-fit text-neutral-100 rounded-lg transition-all hover:scale-105 max-sm:w-full">{"Resume ->"}</Button>
+                    <Button variant="primary" className="bg-neutral-800 w-fit text-neutral-100 rounded-lg transition-all hover:scale-105 max-sm:w-full ">{"Resume ->"}</Button>
                     </Link>
                 </div>
             </div>

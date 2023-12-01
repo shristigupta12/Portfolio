@@ -42,7 +42,7 @@ const Navbar = ()=>{
             <div className="flex text-neutral-700 min-[400px]:hidden justify-center">
             <DropdownMenu >
             <DropdownMenuTrigger className="cursor-pointer hover:underline hover:text-neutral-900">Menu</DropdownMenuTrigger>
-            <DropdownMenuContent>
+            <DropdownMenuContent className="backdrop-blur-sm opacity-80 bg-white">
                 {navItems.map((item, index)=>(
                     <Link href={item.link} key={index}>
                     <DropdownMenuItem className="cursor-pointer hover:bg-neutral-900 hover:text-white px-3 py-1.5 rounded-full">{item.name}</DropdownMenuItem>

@@ -17,7 +17,7 @@ const Home = ()=>{
                 <div className="flex gap-5 flex-col ">
                     <p>A passionate frontend engineer with a love for creating seamless and engaging user experiences.</p>
                     <p>From crafting elegant code to exploring the world of algorithms.</p>
-                    <p>I thrive on turning ideas into reality.</p>
+                    <p>Always up for exploring and learning new things.</p>
                     <Link href="https://drive.google.com/file/d/1PONKwu1Z1BFKIoCeER1aYnsMzVmQt8v2/view?usp=sharing" target="_blank">
                     <Button variant="primary" className="bg-neutral-800 w-fit text-neutral-100 rounded-lg transition-all hover:scale-105 max-sm:w-full ">{"Resume ->"}</Button>
                     </Link>

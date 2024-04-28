@@ -26,7 +26,7 @@ const SkillsData = [
     {
         domain: "Framework",
         skillSets:[
-            "devicon-nextjs-original colored"
+            "devicon-nextjs-plain"
         ]
     }
 ]

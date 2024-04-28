@@ -5,15 +5,17 @@ import {Linkedin} from 'lucide-react'
 import {Code} from 'lucide-react'
 import {Instagram} from 'lucide-react'
 
-const ContactData = [
+const     ContactData = [
     {
         media:"GitHub",
         icon:<Github className='w-4 max-md:w-3'/>,
+        icon2: "devicon-github-original colored",
         link:"https://www.github.com/shristigupta12"
     },
     {
         media:"Twitter",
         icon:<Twitter className='w-4 max-md:w-3'/>,
+        icon2: "devicon-twitter-original",
         link:"https://www.twitter.com/shristigupta120"
     },
     {
@@ -24,6 +26,7 @@ const ContactData = [
     {
         media:"LinkedIn",
         icon:<Linkedin className='w-4 max-md:w-3'/>,
+        icon2: "devicon-linkedin-plain",
         link:"https://www.linkedin.com/in/shristigupta12"
     },
     {

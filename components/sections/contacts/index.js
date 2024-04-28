@@ -3,10 +3,11 @@ import Link from 'next/link'
 import {MapPin} from 'lucide-react'
 import { Button } from "@/components/ui/button"
 import { ContactData } from "@/public/data/contacts-data"
+import { cn } from "@/lib/utils"
 
 const Contacts = () =>{
     return(
-        <footer id="contacts" className="flex flex-col gap-18 bg-neutral-800 text-neutral-100 w-full p-6 overflow-x-hidden">
+        <footer id="contacts" className="flex flex-col gap-18 text-neutral-700 w-full p-6 overflow-x-hidden">
             <ViewContainer className="grid gap-16">
                 <div className="grid font-semibold text-4xl gap-2 max-md:text-xl ">
                 <h1 >Want to get in touch?</h1>
@@ -24,7 +25,8 @@ const Contacts = () =>{
                         <Link href={contact.link} key={index} target="_blank">
                             <Button className="flex gap-1 hover:scale-110 max-md:px-1 max-md:py-0.5 ">
                                 <p className="max-md:text-xs">{contact.media}</p>
-                                {contact.icon}
+                                { contact.icon2 ? <i className={contact.icon2}></i> : contact.icon }
+                                
                             </Button>
                         </Link>
                     ))}

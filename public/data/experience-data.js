@@ -1,7 +1,7 @@
 const ExperienceData = [
     {
         Designation: "Technical Analyst Trainee, Tatvic",
-        Duration: "Jan,2024-Present ",
+        Duration: "Jan, 2024-Present ",
         CompanyLink: "https://www.tatvic.com/",
         LinkName: "tatvic.com ->",
         description:[
@@ -12,7 +12,7 @@ const ExperienceData = [
     },
     {
         Designation: "Creator Relationship Manager, Codedamn",
-        Duration: "March,2024-April,2024 ",
+        Duration: "March,2024 - April,2024 ",
         CompanyLink: "https://www.codedamn.com/",
         LinkName: "codedamn.com ->",
         description:[

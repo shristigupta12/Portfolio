@@ -17,6 +17,10 @@ const Navbar = ()=>{
             link:"#home"
         },
         {
+            name:'experience',
+            link:'#experience'
+        },
+        {
             name:"projects",
             link:"#projects"
         },

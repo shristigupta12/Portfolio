@@ -18,7 +18,7 @@ const Home = ()=>{
                     <p>A passionate frontend engineer with a love for creating seamless and engaging user experiences.</p>
                     <p>From crafting elegant code to exploring the world of algorithms.</p>
                     <p>Always up for exploring and learning new things.</p>
-                    <Link href="https://drive.google.com/file/d/1K-IIbYSM5wwSrAu6RuwSuNBhnPdSsuTx/view?usp=sharing" target="_blank">
+                    <Link href="https://drive.google.com/file/d/15ZGPylAQjkNq_OhsSNOM_n4thY0DGZnp/view?usp=sharing" target="_blank">
                     <Button variant="primary" className="bg-neutral-800 w-fit text-neutral-100 rounded-lg transition-all hover:scale-105 max-sm:w-full ">{"Resume ->"}</Button>
                     </Link>
                 </div>

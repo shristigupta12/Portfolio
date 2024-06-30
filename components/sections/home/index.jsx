@@ -23,7 +23,7 @@ const Home = ()=>{
                     </Link>
                 </div>
             </div>
-                <Image src={'/utils/profile.jpg'} alt="avatar" width={'300'} height={'400'} className="rounded-xl shadow-xl shadow-neutral-200 max-lg:w-[180px] max-lg:h-[240px]  mx-auto max-md:w-[300px] max-md:h-[400px]"/>
+                <Image src={'/utils/portfolio2.jpg'} alt="avatar" width={'300'} height={'400'} className="rounded-xl shadow-xl shadow-neutral-200 max-lg:w-[180px] max-lg:h-[240px]  mx-auto max-md:w-[300px] max-md:h-[400px]"/>
         </section>
         </ViewContainer>
     )

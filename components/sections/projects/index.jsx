@@ -7,9 +7,9 @@ import Link from 'next/link'
 
 const Projects = () => {
     return(
-        <div className="flex flex-col gap-18 text-neutral-700 w-full p-6 overflow-x-hidden" id="projects">
+        <div className="flex flex-col gap-18 text-neutral-700 w-full p-6 max-md:py-0 overflow-x-hidden" id="projects">
             <ViewContainer className="min-xl:w-[1050px]">
-                <h1 className="font-semibold text-5xl ">Projects</h1>
+                <h1 className="font-semibold text-5xl max-md:text-4xl">Projects</h1>
                 <div className="grid gap-20 w-full my-7">
                     {ProjectsData.map((project, index)=>(
                         <div key={index} className="flex justify-center items-center gap-12 max-md:flex-col-reverse">
@@ -19,7 +19,7 @@ const Projects = () => {
                             }}/>
                             {/* </Link> */}
                             <div className="flex flex-col justify-between gap-6">
-                                <h1 className="text-4xl font-bold">{project.name}</h1>
+                                <h1 className="text-4xl max-md:text-2xl  ">{project.name}</h1>
                                 <p className="max-[500px]:text-[14px]">{project.desc}</p>
                                 <div key={index} className="flex gap-3 justify-center">
                                     {project.techStack.map((tech, index)=>(

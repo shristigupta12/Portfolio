@@ -7,7 +7,7 @@ const Skills = () => {
         <div className="bg-neutral-800 text-neutral-100 w-full p-6 overflow-x-hidden py-10">
             <ViewContainer id="skills" >
                 <div className="grid gap-10 w-fit mx-auto">
-                    <h1 className="font-semibold text-5xl text-center ">Skills</h1>
+                    <h1 className="font-semibold text-5xl text-center max-md:text-4xl ">Skills</h1>
                     <div className="grid gap-12">
                         {SkillsData.map((skill, index)=>(
                             <div className="flex gap-4 flex-col items-center" key={index}>

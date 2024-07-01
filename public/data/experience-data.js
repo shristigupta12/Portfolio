@@ -1,13 +1,13 @@
 const ExperienceData = [
     {
-        Designation: "Technical Analyst Trainee, Tatvic",
+        Designation: "Technical Trainee, Tatvic",
         Duration: "Jan, 2024-Present ",
         CompanyLink: "https://www.tatvic.com/",
         LinkName: "tatvic.com ->",
         description:[
+            `Crafted a Google AppScript automation to track and record user actions across multiple organizations’ websites using Google Analytics.`,
             'Developed and implemented data tracking in the dataLayer using JavaScript, enhancing website analytics.',
-            'Tracked user interaction events using Google Analytics 4 and Google Tag Manager for comprehensive user behavior analytics',
-            `Crafted a Google AppScript automation to track and record user actions across multiple organizations' websites using Google Analytics`
+            `Developed scripts to modify website UI, creating multiple variants for A/B testing to evaluate and validate hypothesis.`
         ]
     },
     {

@@ -9,13 +9,13 @@ const Experience = () => {
         <div id="#experience" className="flex flex-col gap-18 bg-neutral-800 text-neutral-100 w-full p-6 overflow-x-hidden">
             <ViewContainer>
                 <div className="py-10">
-                    <h1 className="font-semibold text-5xl ">Experience</h1>
+                    <h1 className="font-semibold text-5xl max-md:text-4xl ">Experience</h1>
                     <div className="grid gap-10 w-full my-7">
                         {ExperienceData.map((exp, index)=>(
                                 <div key={index} className="flex flex-col gap-2">
-                                    <div className="flex justify-between">
-                                        <p className="text-xl">{exp.Designation}</p>
-                                        <p className="text-neutral-400 text-sm">{exp.Duration}</p>
+                                    <div className="min-md:flex min-md:justify-between">
+                                        <p className="text-xl max-md:text-base  ">{exp.Designation}</p>
+                                        <p className="text-neutral-400 text-sm max-md:text-[12px] ">{exp.Duration}</p>
                                     </div>
                                     <Link href={exp.CompanyLink}>
                                         <p className="text-sm pointer-cursor">{exp.LinkName}</p>

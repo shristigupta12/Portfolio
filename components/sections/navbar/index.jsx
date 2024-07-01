@@ -35,15 +35,15 @@ const Navbar = ()=>{
     ]
     return(
         <ViewContainer className={cn("view-container sticky top-3 flex justify-center")} id="nav">
-            <nav className="flex w-fit rounded-md border-2 border-neutral-200 backdrop-blur-sm opacity-80 bg-white p-2 max-[500px]:px-2 max-[500px]:py-2 items-center transition-all">
-            <ul className="flex  gap-1 max-[500px]:gap-2 max-[400px]:gap-1 w-full justify-center max-[500px]:justify-center text-neutral-700 text-[10px] ">
+            <nav className="flex w-full rounded-2xl backdrop-blur-sm opacity-80 bg-white p-2 max-[500px]:px-2 max-[500px]:py-2 items-center transition-all">
+            <ul className="flex  gap-1 max-[500px]:gap-2 max-[500px]:justify-evenly w-full text-neutral-700 max-[500px]:text-[12px] ">
                 {navItems.map((item, index)=>(
                     <Link href={item.link} key={index}>
-                    <li className="cursor-pointer hover:bg-neutral-900 hover:text-white px-3 py-1.5 rounded-full max-[500px]:px-1 max-[500px]:py-1">{item.name}</li>
+                    <li className="cursor-pointer hover:bg-neutral-700 hover:text-white px-3 py-1.5 rounded-xl  max-[500px]:px-1 max-[500px]:py-1">{item.name}</li>
                     </Link>
                 ))}
             </ul>
-            <div className="flex text-neutral-700 min-[400px]:hidden justify-center ">
+            {/* <div className="flex text-neutral-700 min-[400px]:hidden justify-center "> */}
             {/* <DropdownMenu >
             <DropdownMenuTrigger className="cursor-pointer hover:underline hover:text-neutral-900 ">Menu</DropdownMenuTrigger>
             <DropdownMenuContent className=" rounded-md backdrop-blur-sm opacity-80 bg-white">
@@ -54,7 +54,7 @@ const Navbar = ()=>{
                 ))}
             </DropdownMenuContent>
             </DropdownMenu> */}
-            </div>
+            {/* </div> */}
         </nav>
         </ViewContainer>
          

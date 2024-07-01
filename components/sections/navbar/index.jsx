@@ -35,7 +35,7 @@ const Navbar = ()=>{
     ]
     return(
         <ViewContainer className={cn("view-container sticky top-3 flex justify-start")} id="nav">
-            <nav className="flex w-fit rounded-2xl  bg-neutral-700    p-2 max-[500px]:px-2 max-[500px]:py-2 items-center transition-all shadow-md shadow-neutral-400 ">
+            <nav className="flex w-fit rounded-2xl backdrop-blur-sm bg-neutral-700    p-2 max-[500px]:px-2 max-[500px]:py-2 items-center transition-all shadow-md shadow-neutral-400 ">
             <ul className="flex  gap-1 max-[500px]:gap-2  w-full text-neutral-700 max-[500px]:text-[14px] ">
                 {navItems.map((item, index)=>(
                     <Link href={item.link} key={index}>

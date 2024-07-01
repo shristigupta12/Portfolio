@@ -22,7 +22,7 @@ const Experience = () => {
                                     </Link>
                                     <ul className=" ">
                                         {exp.description.map((descriptionItem, ind)=>(
-                                            <li className="list-disc text-neutral-400" key={ind}>{descriptionItem}</li>
+                                            <li className="list-disc text-neutral-400 max-[500px]:text-[14px]" key={ind}>{descriptionItem}</li>
                                         ))}
                                     </ul>
                                 </div>

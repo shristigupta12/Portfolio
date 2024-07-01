@@ -20,7 +20,7 @@ const Projects = () => {
                             {/* </Link> */}
                             <div className="flex flex-col justify-between gap-6">
                                 <h1 className="text-4xl font-bold">{project.name}</h1>
-                                <p className="">{project.desc}</p>
+                                <p className="max-[500px]:text-[14px]">{project.desc}</p>
                                 <div key={index} className="flex gap-3 justify-center">
                                     {project.techStack.map((tech, index)=>(
                                         <Badge variant="outline" key={index} className=" cursor-pointer hover:bg-neutral-200 hover:text-neutral-900 hover:scale-105">{tech}</Badge>

@@ -9,7 +9,7 @@ const Home = ()=>{
     return(
         <ViewContainer id="home">
         <section className="flex h-full justify-center gap-12  max-md:flex-col max-md:mt-[-40px]">
-            <div className="flex flex-col gap-12 max-md:gap-6 text-neutral-700  ">
+            <div className="flex flex-col gap-12 max-md:gap-8 max-md:gap-6 text-neutral-700  ">
                 <div className="flex min-[500px]:flex-col gap-3 font-semibold text-5xl max-[500px]:text-2xl font-sans">
                     <h1 >Hey there,</h1>
                     <h1>{`I'm Shristi 🌻`}</h1>

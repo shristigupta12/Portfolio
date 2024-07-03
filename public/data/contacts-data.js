@@ -21,7 +21,7 @@ const     ContactData = [
     {
         media:"Resume",
         icon:<Newspaper className='w-4 max-md:w-3'/>,
-        link:"https://drive.google.com/file/d/1QaHS9L0vimQDfxEwSGEEyg46MxQ5tBvt/view?usp=drive_link"
+        link:"https://drive.google.com/file/d/15hJfnazXhPYI0-FDdAXvcr3aQXtXaiMg/view"
     },
     {
         media:"LinkedIn",

@@ -1,5 +1,14 @@
 
 const ProjectsData = [
+    
+    {
+        img:"/utils/Recipedia.png",
+        name:"Recipedia 🍴",
+        desc:"A platform for cooking enthusiasts to get top 5 recipes based on the available ingredients. Integrated OpenAI’s API to generate personalized recipes",
+        techStack:["Next.js", "TypeScript", "TailwindCSS", "OpenAI"],
+        githubLink:"https://github.com/shristigupta12/Recipedia",
+        link:"https://recipedia-chi.vercel.app/"
+    },
     {
         img:"/utils/ProblemTracker.png",
         name:"Problem Tracker 👩‍💻",
@@ -15,15 +24,15 @@ const ProjectsData = [
         techStack:["Next.js", "TypeScript", "TailwindCSS"],
         githubLink:"https://github.com/shristigupta12/ArtBeatNFT",
         link:"https://art-beat-nft.vercel.app/"
-    },
-    {
-        img:"/utils/Shoppers.png",
-        name:"Shoppers 🛍️",
-        desc:"A feature-rich e-commerce platform crafted for seamless online shopping. Leveraging React.js for a responsive front-end, and Express.js and Node.js for robust back-end functionalities, Shoppers ensures a secure and user-friendly experience. The integration of MongoDB guarantees optimal data management, while Stripe facilitates secure financial transactions.",
-        techStack:["React.js", "MongoDB", "Node.js", "Express.js"],
-        githubLink:"https://github.com/shristigupta12/shoppers",
-        link:"https://shoppers-initial.vercel.app/"
     }
+    // {
+    //     img:"/utils/Shoppers.png",
+    //     name:"Shoppers 🛍️",
+    //     desc:"A feature-rich e-commerce platform crafted for seamless online shopping. Leveraging React.js for a responsive front-end, and Express.js and Node.js for robust back-end functionalities, Shoppers ensures a secure and user-friendly experience. The integration of MongoDB guarantees optimal data management, while Stripe facilitates secure financial transactions.",
+    //     techStack:["React.js", "MongoDB", "Node.js", "Express.js"],
+    //     githubLink:"https://github.com/shristigupta12/shoppers",
+    //     link:"https://shoppers-initial.vercel.app/"
+    // }
     // {
     //     img:"/utils/PrepMeUp.png",
     //     name:"PrepMeUp 💼 ",

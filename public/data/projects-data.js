@@ -1,6 +1,13 @@
 
 const ProjectsData = [
-    
+    {
+        img:"/utils/github-compatibility.png",
+        name:"GitHub Compatibility✨",
+        desc:"A Compatibility Finder between two github users along with project ideas to work on.",
+        techStack:["Next.js", "OpenAI", "TailwindCSS", "Octokit"],
+        githubLink:"https://github.com/shristigupta12/github-compatibility",
+        link:"https://github-compatibility.vercel.app/"
+    },
     {
         img:"/utils/Recipedia.png",
         name:"Recipedia 🍴",
@@ -16,15 +23,8 @@ const ProjectsData = [
         techStack:["Next.js", "TypeScript", "TailwindCSS", "API"],
         githubLink:"https://github.com/shristigupta12/problem_tracking",
         link:"https://problem-tracking.vercel.app/"
-    },
-    {
-        img:"/utils/ArtBeatNft.png",
-        name:"ArtBeatNFT 🪄",
-        desc:"A robust Next.js and TypeScript NFT marketplace platform where you can buy and sell NFTs specifically in the domain of art and music.",
-        techStack:["Next.js", "TypeScript", "TailwindCSS"],
-        githubLink:"https://github.com/shristigupta12/ArtBeatNFT",
-        link:"https://art-beat-nft.vercel.app/"
     }
+    
     // {
     //     img:"/utils/Shoppers.png",
     //     name:"Shoppers 🛍️",

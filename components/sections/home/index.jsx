@@ -19,7 +19,7 @@ const Home = ()=>{
                     <p>From crafting elegant code to exploring the world of algorithms.</p>
                     <p>Always up for exploring and learning new things.</p>
                     <div className="w-full flex max-md:justify-center">
-                        <Link href="https://drive.google.com/file/d/1G0Jrb56Ci0I7t1o3RRkKbL8mIS94gjrR/view?usp=sharing">
+                        <Link href="https://drive.google.com/file/d/1L0GBExLgEqoTtPE2kSrjyoxOQNSrpZe2/view?usp=sharing">
                         <Button variant="primary" className="bg-neutral-800 w-fit text-neutral-100 rounded-xl transition-all hover:scale-105 shadow-md shadow-neutral-400">{"Resume ->"}</Button>
                         </Link>
                     </div>

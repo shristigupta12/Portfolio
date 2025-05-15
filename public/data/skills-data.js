@@ -10,24 +10,27 @@ const SkillsData = [
         ]
     },
     {
-        domain: "Libraries",
+        domain: "Tools",
         skillSets:[
-            "devicon-react-original",
-            "devicon-tailwindcss-plain"
-        ]
-    },
-    {
-        domain: "Databases",
-        skillSets:[
-            "devicon-mongodb-plain",
-            "devicon-mysql-plain"
+            "devicon-git-plain",
+            "devicon-github-original",
+            // "devicon-vite-plain",
+            // "devicon-pnpm-plain",
+            "devicon-npm-original-wordmark"
         ]
     },
     {
         domain: "Framework",
         skillSets:[
-            "devicon-nextjs-plain"
+            "devicon-nextjs-plain",
+            "devicon-tailwindcss-plain"
         ]
-    }
+    },
+    {
+        domain: "Libraries",
+        skillSets:[
+            "devicon-react-original",
+        ]
+    },
 ]
 export {SkillsData}

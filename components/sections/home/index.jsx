@@ -16,10 +16,10 @@ const Home = ()=>{
                 </div>
                 <div className="flex gap-5 flex-col max-[500px]:text-[14px] ">
                     <p>A passionate frontend engineer with a love for creating seamless and engaging user experiences.</p>
-                    <p>From crafting elegant code to exploring the world of algorithms.</p>
+                    <p>From building intuitive user interfaces to engineering AI-powered solutions that scale.</p>
                     <p>Always up for exploring and learning new things.</p>
                     <div className="w-full flex max-md:justify-center">
-                        <Link href="https://drive.google.com/file/d/1L0GBExLgEqoTtPE2kSrjyoxOQNSrpZe2/view?usp=sharing">
+                        <Link href="https://drive.google.com/file/d/157TTefNXoi1sZJasDDbkAqYr1F49eLCR/view?usp=sharing">
                         <Button variant="primary" className="bg-neutral-800 w-fit text-neutral-100 rounded-xl transition-all hover:scale-105 shadow-md shadow-neutral-400">{"Resume ->"}</Button>
                         </Link>
                     </div>

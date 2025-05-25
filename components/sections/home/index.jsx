@@ -18,7 +18,7 @@ const Home = ()=>{
                     <p>From building intuitive user interfaces to engineering AI-powered solutions that scale.</p>
                     <p>Always up for exploring and learning new things.</p>
                     <div className="w-full flex max-md:justify-center">
-                        <Link href="https://drive.google.com/file/d/188_sorZWyNW0eZmnpbA3U-SIk0rV2ZwZ/view?usp=drive_link">
+                        <Link href="https://drive.google.com/file/d/13uEFqY3sH88uJHRvcNO9rMZGOF8LEC4u/view">
                         <button variant="ghost" className="text-sm w-fit text-neutral-400 underline transition-all hover:scale-105 hover:text-amber-600 ">{"Resume ->"}</button>
                         </Link>
                     </div>

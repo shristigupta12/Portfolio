@@ -17,7 +17,7 @@ export default function RootLayout({ children }) {
             <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css" />
             <link rel="shortcut icon" href="/utils/favicon.ico" />
           </head>
-      <body className={cn(" grid gap-24", inter.className)}>
+      <body className={cn(" grid gap-12", inter.className)}>
           <Navbar/>
           {children}
       </body>

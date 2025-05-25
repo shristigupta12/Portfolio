@@ -6,23 +6,23 @@ const Experience = () => {
 
 
     return(
-        <div id="#experience" className="flex flex-col gap-18 bg-neutral-800 text-neutral-100 w-full p-6 overflow-x-hidden">
+        <div id="#experience" className="flex flex-col gap-18 text-neutral-600 w-full overflow-x-hidden">
             <ViewContainer>
-                <div className="py-10">
-                    <h1 className="font-semibold text-5xl max-md:text-4xl ">Experience</h1>
-                    <div className="grid gap-10 w-full my-7">
+                <div className="flex flex-col gap-4">
+                    <h1 className="font-semibold text-xl max-md:text-lg ">Experience</h1>
+                    <div className="grid gap-3 w-full">
                         {ExperienceData.map((exp, index)=>(
-                                <div key={index} className="flex flex-col gap-2">
+                                <div key={index} className="flex flex-col gap-1">
                                     <div className="min-md:flex min-md:justify-between">
-                                        <p className="text-xl max-md:text-base  ">{exp.Designation}</p>
-                                        <p className="text-neutral-400 text-sm max-md:text-[12px] ">{exp.Duration}</p>
+                                        <p className="text-sm max-md:text-xs font-semibold">{exp.Designation}</p>
+                                        {/* <p className="text-neutral-400 text-xs max-md:text-[12px] ">{exp.Duration}</p> */}
                                     </div>
                                     <Link href={exp.CompanyLink}>
-                                        <p className="text-sm pointer-cursor">{exp.LinkName}</p>
+                                        <p className="text-xs pointer-cursor underline text-neutral-400 hover:text-amber-600">{exp.LinkName}</p>
                                     </Link>
-                                    <ul className=" ">
+                                    <ul className="pl-8">
                                         {exp.description.map((descriptionItem, ind)=>(
-                                            <li className="list-disc text-neutral-400 max-[500px]:text-[14px]" key={ind}>{descriptionItem}</li>
+                                            <li className="list-disc text-[13px] text-neutral-500 max-[500px]:text-[14px]" key={ind}>{descriptionItem}</li>
                                         ))}
                                     </ul>
                                 </div>

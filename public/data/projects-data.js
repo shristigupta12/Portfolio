@@ -1,6 +1,13 @@
 
 const ProjectsData = [
     {
+        name: "AI Search and Chat🌐",
+        desc: "Developed a full-stack AI chat application with Google Authentication, personalized user sessions, real-time message history, and enhanced UX using Next.js, TypeScript, Supabase, and OpenAI's GPT-4o-mini.",
+        techStack:["Next.js", "TypeScript", "Supabase", "OpenAI"],
+        githubLink:"https://github.com/shristigupta12/ai-search-and-chat",
+        link:"https://ai-search-engine-beige.vercel.app/"
+    },
+    {
         img:"/utils/github-compatibility.png",
         name:"GitHub Compatibility✨",
         desc:"A Compatibility Finder between two github users along with project ideas to work on.",
@@ -16,14 +23,14 @@ const ProjectsData = [
         githubLink:"https://github.com/shristigupta12/Recipedia",
         link:"https://recipedia-chi.vercel.app/"
     },
-    {
-        img:"/utils/ProblemTracker.png",
-        name:"Problem Tracker 👩‍💻",
-        desc:"A robust Next.js and TypeScript-powered tool designed for efficient Data Structures and Algorithms (DSA) management. Seamlessly integrating with APIs, it offers an intuitive interface and sleek aesthetics with TailwindCSS. Your command center for DSA challenges, it keeps you updated on coding contests in real-time.",
-        techStack:["Next.js", "TypeScript", "TailwindCSS", "API"],
-        githubLink:"https://github.com/shristigupta12/problem_tracking",
-        link:"https://problem-tracking.vercel.app/"
-    }
+    // {
+    //     img:"/utils/ProblemTracker.png",
+    //     name:"Problem Tracker 👩‍💻",
+    //     desc:"A robust Next.js and TypeScript-powered tool designed for efficient Data Structures and Algorithms (DSA) management. Seamlessly integrating with APIs, it offers an intuitive interface and sleek aesthetics with TailwindCSS. Your command center for DSA challenges, it keeps you updated on coding contests in real-time.",
+    //     techStack:["Next.js", "TypeScript", "TailwindCSS", "API"],
+    //     githubLink:"https://github.com/shristigupta12/problem_tracking",
+    //     link:"https://problem-tracking.vercel.app/"
+    // }
     
     // {
     //     img:"/utils/Shoppers.png",

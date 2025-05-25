@@ -29,11 +29,11 @@ const     ContactData = [
         icon2: "devicon-linkedin-plain",
         link:"https://www.linkedin.com/in/shristigupta12"
     },
-    {
-        media:"Leetcode",
-        icon:<Code className='w-4 max-md:w-3'/>,
-        link:"https://www.leetcode.com/ShristiGupta12"
-    },
+    // {
+    //     media:"Leetcode",
+    //     icon:<Code className='w-4 max-md:w-3'/>,
+    //     link:"https://www.leetcode.com/ShristiGupta12"
+    // },
     {
         media:"Instagram",
         icon:<Instagram className='w-4 max-md:w-3'/>,

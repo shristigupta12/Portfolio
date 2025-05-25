@@ -2,7 +2,7 @@ const ExperienceData = [
     {
       Designation: "Founding Software Engineer, Vidyayatan Technologies",
       Duration: "Nov, 2024 – Present",
-      CompanyLink: "https://www.vidyayatan.com/",
+      CompanyLink: "https://www.vacademy.io/",
       LinkName: "vidyayatan.com ->",
       description: [
         "Built an AI-integrated education platform from scratch using React, TypeScript, TailwindCSS, Zustand, Zod, and TanStack Query.",

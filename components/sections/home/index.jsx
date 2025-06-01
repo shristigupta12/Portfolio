@@ -18,7 +18,7 @@ const Home = ()=>{
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.6 }}
                 >
-                    Hi, I'm 
+                    Hi, I&apos;m 
                 </motion.p>
                 <motion.div 
                     className="flex items-end text-7xl max-[500px]:text-2xl font-sans max-sm:gap-2"

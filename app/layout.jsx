@@ -29,7 +29,7 @@ export default function RootLayout({ children }) {
           </head>
       <body className={cn(" grid ", poppins.className, playfair.variable)}>
           <Navbar/>
-          <div >
+          <div className='max-sm:w-[450px]' >
             {children}
           </div>
       </body>

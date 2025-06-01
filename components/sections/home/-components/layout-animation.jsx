@@ -54,7 +54,7 @@ export default function LayoutAnimation() {
 
   return (
     <div 
-      className="bg-white py-10 border  " 
+      className="bg-white py-10 border max-sm:h-[35vh] " 
       style={{
         backgroundImage: `
           radial-gradient(circle, #e5e5e5 1px, transparent 1px)
@@ -68,13 +68,13 @@ export default function LayoutAnimation() {
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.3 }}
-        className=" z-10  border bg-white border-gray-200 rounded-md p-3 shadow-sm w-[30%]"
+        className=" z-10 border bg-white border-gray-200 rounded-md p-3 shadow-sm w-[30%]"
       >
         {/* <div className="flex items-center gap-2 mb-2">
           <Code size={16} className="text-gray-500" />
           <span className="text-sm font-medium text-gray-700">CSS</span>
         </div> */}
-        <pre className="text-xs text-neutral-500 font-mono overflow-x-auto whitespace-pre-wrap">
+        <pre className="text-xs max-sm:text-[10px] text-neutral-500 font-mono overflow-x-auto whitespace-pre-wrap">
           {codeSnippets[Math.min(step, maxSteps)]}
         </pre>
       </motion.div>

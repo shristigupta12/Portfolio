@@ -12,14 +12,10 @@ const Experience = () => {
     ]
 
     return(
-            <div id="#work" className="flex flex-col gap-18 py-20 text-neutral-600 w-full overflow-x-hidden" style={{
-                background: 'linear-gradient(to right, #f5f5f5 1px, transparent 1px), linear-gradient(to bottom, #f5f5f5 1px, transparent 1px)',
-                backgroundSize: '80px 80px',
-                backgroundPosition: 'center',
-            }}>
+            <div id="#work" className="flex flex-col sm:gap-18 gap-10 sm:py-20 py-10 text-neutral-600 w-full overflow-x-hidden bg-[linear-gradient(to_right,_#f5f5f5_1px,_transparent_1px),_linear-gradient(to_bottom,_#f5f5f5_1px,_transparent_1px)] bg-[length:50px_50px] sm:bg-[length:80px_80px] bg-center">
             <ViewContainer>
-                <div className="flex flex-col gap-10 w-full">
-                <p className="text-5xl font-semibold text-neutral-600 max-w-2xl mx-auto ">Work</p>
+                <div className="flex flex-col sm:gap-10 gap-4 w-full">
+                <p className="sm:text-5xl text-2xl font-semibold text-neutral-600 max-w-2xl mx-auto ">Work</p>
                     <div className="grid gap-8 w-full">
                         {ExperienceData.map((exp, index)=>(
                                 <div key={index} className="flex flex-col gap-3">
@@ -34,7 +30,7 @@ const Experience = () => {
                                         </div>
                                     <ul className="pl-8">
                                         {exp.description.map((descriptionItem, ind)=>(
-                                            <li className="list-disc text-sm text-neutral-500 max-[500px]:text-[14px]" key={ind}>{descriptionItem}</li>
+                                            <li className="list-disc sm:text-sm text-[10px] text-neutral-500" key={ind}>{descriptionItem}</li>
                                         ))}
                                     </ul>
                                 </div>

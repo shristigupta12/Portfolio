@@ -5,14 +5,14 @@ import { motion } from "framer-motion"
 
 const Home = ()=>{
     return(
-        <section 
-            className="flex justify-between gap-24 pt-20 flex-col max-md:mt-[-25px] min-h-screen"
+        <div 
+            className="flex justify-between sm:gap-24 gap-10 sm:pt-20 pt-10 flex-col sm:min-h-screen "
             style={{
                 background: 'radial-gradient(circle at bottom left, #EBEFFF 40%, #ffffff 60%)',
             }}
         >
         <ViewContainer id="home"  >
-            <div className="flex flex-col gap-8 max-md:gap-5  text-neutral-700 max-sm:mt-3 ">
+            <div className="flex flex-col sm:gap-8 gap-4 text-neutral-700 ">
                 <motion.p
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
@@ -34,7 +34,7 @@ const Home = ()=>{
                                 repeat: 10,
                                 ease: "easeInOut"
                             }}
-                            className="text-5xl"
+                            className="sm:text-5xl text-3xl"
                         >
                             🌻
                         </motion.span>
@@ -59,9 +59,8 @@ const Home = ()=>{
                 </motion.div>
             </div>
         </ViewContainer>
-                <LayoutAnimation />
-                {/* <Skills /> */}
-        </section>
+            <LayoutAnimation />
+        </div>
     )
 }
 

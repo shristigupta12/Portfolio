@@ -12,7 +12,7 @@ const SkillTag = ({ skill, index }) => {
       animate={{ opacity: 1, y: 0 }}
       transition={{ delay: index * 0.1, duration: 0.5 }}
       className={`
-        px-4 py-2 mx-3 rounded-full border font-mono text-sm
+        sm:px-4 sm:py-2 sm:mx-3 px-2 py-1 mx-2 rounded-full border font-mono text-sm
         transition-all duration-300 hover:scale-105 hover:shadow-md
         cursor-pointer whitespace-nowrap 
        ${getSkillColor(index)}
@@ -27,7 +27,7 @@ export default function Skills() {
   return (
     <section className="w-full py-10 md:py-24 overflow-hidden max-w-6xl mx-auto px-6 flex flex-col gap-10">
         {/* Section Header */}
-        <div className="flex flex-col gap-4">
+        <div className="flex flex-col sm:gap-4 gap-2">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -36,7 +36,7 @@ export default function Skills() {
           className="text-center "
         >
           {/* <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Tech Stack & Skills</h2> */}
-          <p className="text-5xl font-semibold text-neutral-400 max-w-2xl mx-auto">
+          <p className="sm:text-5xl text-2xl font-semibold text-neutral-400 max-w-2xl mx-auto">
             Technologies and tools
           </p>
         </motion.div>
@@ -68,7 +68,7 @@ export default function Skills() {
             viewport={{ once: true }}
             className="mb-6"
           >
-            <Marquee direction="right" speed={40} gradient={false} className="py-2">
+            <Marquee direction="right" speed={40} gradient={false} className="">
               {SkillsData.map((skill, index) => (
                 <SkillTag key={`right-${index}`} skill={skill} index={index} />
               ))}

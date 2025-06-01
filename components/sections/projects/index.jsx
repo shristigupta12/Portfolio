@@ -38,21 +38,21 @@ const borderColor = [
 
 const Projects = () => {
     return(
-        <div className="flex flex-col items-center gap-18 bg-neutral-50 text-neutral-700 w-full px-6 py-20 overflow-x-hidden" id="projects">
+        <div className="flex flex-col items-center sm:gap-18 gap-10 bg-neutral-50 text-neutral-700 w-full px-6 sm:py-20 py-10 overflow-x-hidden" id="projects">
             <ViewContainer className="min-xl:w-[1050px] flex flex-col gap-10 items-center">
-            <p className="text-5xl font-semibold text-neutral-600 max-w-2xl mx-auto">
+            <p className="sm:text-5xl text-2xl font-semibold text-neutral-600 max-w-2xl mx-auto">
                 Projects
             </p>
                 <div className="flex flex-col gap-10 w-full items-center">
                     {ProjectsData.map((project, index)=>(
-                        <div key={index} className={`flex items-center gap-6 shadow-sm border rounded-[10px] p-4 w-[50vw] h-[70vh] hover:shadow-md bg-white transition-shadow duration-300 ease-in-out ${shadowClasses[index]} $ ${borderColor[index]}`}>
-                            <div className="flex flex-col justify-between gap-2">
+                        <div key={index} className={`flex items-center gap-6 shadow-sm border rounded-[10px] p-4 sm:w-[50vw] w-[90vw] sm:h-[70vh] h-[32vh] hover:shadow-md bg-white transition-shadow duration-300 ease-in-out ${shadowClasses[index]} $ ${borderColor[index]}`}>
+                            <div className="flex flex-col justify-between sm:gap-2 gap-4">
                                 <h1 className={`max-md:text-xs text-base font-semibold text-center`}>{project.name}</h1>
                                 <Link href={project.link} target="_blank">
                                     <Image src={project.imageUrl} alt={project.name} width={608} height={300} className="w-full h-full object-cover rounded-lg cursor-pointer hover:shadow-sm" />
                                 </Link>
                                 <div className="flex items-center justify-between gap-4">
-                                <p className=" text-[13px] text-neutral-400">{project.desc}</p>
+                                <p className=" sm:text-[13px] text-[10px] text-neutral-400">{project.desc}</p>
                                 
                                 <Link href={project.githubLink} target="_blank">
                                     <button className={`${textColor[index]} text-neutral-600 text-sm`}>GitHub</button>

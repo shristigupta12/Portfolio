@@ -8,7 +8,7 @@ const Home = ()=>{
         <section 
             className="flex justify-between gap-24 pt-20 flex-col max-md:mt-[-25px] min-h-screen"
             style={{
-                background: 'radial-gradient(circle at bottom left, #e0e7ff 40%, #ffffff 60%)',
+                background: 'radial-gradient(circle at bottom left, #EBEFFF 40%, #ffffff 60%)',
             }}
         >
         <ViewContainer id="home"  >

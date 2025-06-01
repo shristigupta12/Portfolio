@@ -1,24 +1,25 @@
 
 const ProjectsData = [
     {
-        name: "AI Search and Chat🌐",
-        desc: "Developed a full-stack AI chat application with Google Authentication, personalized user sessions, real-time message history, and enhanced UX using Next.js, TypeScript, Supabase, and OpenAI's GPT-4o-mini.",
+        name: "AI Search and Chat",
+        desc: "A full-stack AI chat application with Google Authentication, personalized user sessions, real-time message history, and enhanced UX using Next.js, TypeScript, Supabase, and OpenAI's GPT-4o-mini.",
+        imageUrl: "/images/ai-search-and-chat.png",
         techStack:["Next.js", "TypeScript", "Supabase", "OpenAI"],
         githubLink:"https://github.com/shristigupta12/ai-search-and-chat",
         link:"https://ai-search-engine-beige.vercel.app/"
     },
     {
-        img:"/utils/github-compatibility.png",
-        name:"GitHub Compatibility✨",
+        name:"GitHub Compatibility",
         desc:"A Compatibility Finder between two github users along with project ideas to work on.",
+        imageUrl:"/images/github-compatibility.png",
         techStack:["Next.js", "OpenAI", "TailwindCSS", "Octokit"],
         githubLink:"https://github.com/shristigupta12/github-compatibility",
         link:"https://github-compatibility.vercel.app/"
     },
     {
-        img:"/utils/Recipedia.png",
-        name:"Recipedia 🍴",
+        name:"Recipedia",
         desc:"A platform for cooking enthusiasts to get top 5 recipes based on the available ingredients. Integrated OpenAI’s API to generate personalized recipes",
+        imageUrl:"/images/recipedia.png",
         techStack:["Next.js", "TypeScript", "TailwindCSS", "OpenAI"],
         githubLink:"https://github.com/shristigupta12/Recipedia",
         link:"https://recipedia-chi.vercel.app/"

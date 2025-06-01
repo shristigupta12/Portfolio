@@ -14,8 +14,8 @@ const SkillTag = ({ skill, index }) => {
       className={`
         px-4 py-2 mx-3 rounded-full border font-mono text-sm
         transition-all duration-300 hover:scale-105 hover:shadow-md
-        cursor-pointer whitespace-nowrap
-        ${getSkillColor(skill)}
+        cursor-pointer whitespace-nowrap 
+       ${getSkillColor(index)}
       `}
     >
       {skill}
@@ -69,7 +69,7 @@ export default function Skills() {
             className="mb-6"
           >
             <Marquee direction="right" speed={40} gradient={false} className="py-2">
-              {SkillsData.slice(6).map((skill, index) => (
+              {SkillsData.map((skill, index) => (
                 <SkillTag key={`right-${index}`} skill={skill} index={index} />
               ))}
             </Marquee>
@@ -83,7 +83,7 @@ export default function Skills() {
             viewport={{ once: true }}
           >
             <Marquee direction="left" speed={35} gradient={false} className="py-2">
-              {SkillsData.slice(6).map((skill, index) => (
+              {SkillsData.map((skill, index) => (
                 <SkillTag key={`left-${index}`} skill={skill} index={index} />
               ))}
             </Marquee>

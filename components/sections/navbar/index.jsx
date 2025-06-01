@@ -18,7 +18,7 @@ const Navbar = ()=>{
         },
         {
             name:'Work',
-            link:'#experience'
+            link:'#work'
         },
         {
             name:"Projects",

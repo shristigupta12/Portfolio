@@ -1,7 +1,7 @@
 import { Poppins, Playfair_Display } from 'next/font/google'
 import './globals.css'
-import { Navbar } from '@/components/sections/navbar'
 import { cn } from '@/lib/utils'
+import SplashWrapper from '@/components/splash-wrapper'
 
 const poppins = Poppins({ 
   subsets: ['latin'],
@@ -24,14 +24,11 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
-            <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css" />
-            <link rel="shortcut icon" href="/utils/favicon.ico" />
-          </head>
-      <body className={cn(" grid ", poppins.className, playfair.variable)}>
-          <Navbar/>
-          <div className='max-sm:w-[450px]' >
-            {children}
-          </div>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css" />
+        <link rel="shortcut icon" href="/utils/favicon.ico" />
+      </head>
+      <body className={cn("grid", poppins.className, playfair.variable)}>
+        <SplashWrapper>{children}</SplashWrapper>
       </body>
     </html>
   )

@@ -14,17 +14,13 @@ const Navbar = ()=>{
             link:"#home"
         },
         {
-            name:'Work',
-            link:'#work'
-        },
-        {
             name:"Projects",
             link:"#projects"
         },
-        // {
-        //     name:"skills",
-        //     link:"#skills"
-        // },
+        {
+            name:'Work',
+            link:'#work'
+        },
         {
             name:"Contacts",
             link:"#contacts"

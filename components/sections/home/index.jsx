@@ -8,7 +8,7 @@ const Home = ()=>{
         <div 
             className="flex justify-between sm:gap-24 gap-10 sm:pt-20 pt-10 flex-col sm:min-h-screen "
             style={{
-                background: 'radial-gradient(circle at bottom left, #EBEFFF 40%, #ffffff 60%)',
+                background: 'radial-gradient(circle at bottom left,  #fdf2f8 40%, #ffffff 60%)',
             }}
         >
         <ViewContainer id="home"  >
@@ -54,7 +54,7 @@ const Home = ()=>{
                     transition={{ delay: 2.5, duration: 0.8 }}
                 >
                     <Link href="https://drive.google.com/file/d/188_sorZWyNW0eZmnpbA3U-SIk0rV2ZwZ/view?usp=drive_link">
-                    <button variant="ghost" className="text-sm w-fit text-neutral-400 underline transition-all  hover:text-amber-600 ">{"Resume ->"}</button>
+                    <button variant="ghost" className="text-sm w-fit text-neutral-400 underline transition-all  hover:text-neutral-600 ">{"Resume ->"}</button>
                     </Link>
                 </motion.div>
             </div>

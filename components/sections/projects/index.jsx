@@ -2,6 +2,7 @@ import { ProjectsData } from "@/public/data/projects-data"
 import { ViewContainer } from "@/components/layouts/view-container"
 import Image from "next/image"
 import Link from 'next/link'
+import { motion } from "framer-motion"
 
 const shadowClasses = [
     "hover:shadow-blue-200",
@@ -38,33 +39,88 @@ const borderColor = [
 
 const Projects = () => {
     return(
-        <div className="flex flex-col items-center sm:gap-18 gap-10 bg-neutral-50 text-neutral-700 w-full px-6 sm:py-20 py-10 overflow-x-hidden" id="projects">
+        <motion.div 
+            className="flex flex-col items-center sm:gap-18 gap-10 bg-neutral-50 text-neutral-700 w-full px-6 sm:py-20 py-10 overflow-x-hidden" 
+            id="projects"
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, ease: "easeOut" }}
+            viewport={{ once: true, amount: 0.2 }}
+        >
             <ViewContainer className="min-xl:w-[1050px] flex flex-col gap-10 items-center">
-            <p className="sm:text-5xl text-2xl font-semibold text-neutral-600 max-w-2xl mx-auto">
-                Projects
-            </p>
+                <motion.p 
+                    className="sm:text-5xl text-2xl font-semibold text-neutral-600 max-w-2xl mx-auto"
+                    initial={{ opacity: 0, y: 30 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.6, delay: 0.2 }}
+                    viewport={{ once: true }}
+                >
+                    Projects
+                </motion.p>
                 <div className="flex flex-col gap-10 w-full items-center">
                     {ProjectsData.map((project, index)=>(
-                        <div key={index} className={`flex items-center gap-6 shadow-sm border rounded-[10px] p-4 sm:w-[50vw] w-[90vw] sm:h-[70vh] h-[32vh] hover:shadow-md bg-white transition-shadow duration-300 ease-in-out ${shadowClasses[index]} $ ${borderColor[index]}`}>
+                        <motion.div 
+                            key={index} 
+                            className={`flex items-center gap-6 shadow-sm border rounded-[10px] p-4 sm:w-[50vw] w-[90vw] sm:h-[70vh] h-[32vh] hover:shadow-md bg-white transition-shadow duration-300 ease-in-out ${shadowClasses[index]} $ ${borderColor[index]}`}
+                            initial={{ opacity: 0, y: 50, scale: 0.9 }}
+                            whileInView={{ opacity: 1, y: 0, scale: 1 }}
+                            transition={{ 
+                                duration: 0.6, 
+                                delay: index * 0.1,
+                                ease: "easeOut"
+                            }}
+                            viewport={{ once: true, amount: 0.3 }}
+                            whileHover={{ 
+                                y: -5,
+                                transition: { duration: 0.2 }
+                            }}
+                        >
                             <div className="flex flex-col justify-between sm:gap-2 gap-4">
-                                <h1 className={`max-md:text-xs text-base font-semibold text-center`}>{project.name}</h1>
+                                <motion.h1 
+                                    className={`max-md:text-xs text-base font-semibold text-center`}
+                                    initial={{ opacity: 0 }}
+                                    whileInView={{ opacity: 1 }}
+                                    transition={{ duration: 0.4, delay: index * 0.1 + 0.3 }}
+                                    viewport={{ once: true }}
+                                >
+                                    {project.name}
+                                </motion.h1>
                                 <Link href={project.link} target="_blank">
-                                    <Image src={project.imageUrl} alt={project.name} width={608} height={300} className="w-full h-full object-cover rounded-lg cursor-pointer hover:shadow-sm" />
+                                    <motion.div
+                                        whileHover={{ scale: 1.02 }}
+                                        whileTap={{ scale: 0.98 }}
+                                        transition={{ duration: 0.2 }}
+                                    >
+                                        <Image src={project.imageUrl} alt={project.name} width={608} height={300} className="w-full h-full object-cover rounded-lg cursor-pointer hover:shadow-sm" />
+                                    </motion.div>
                                 </Link>
-                                <div className="flex items-center justify-between gap-4">
-                                <p className=" sm:text-[13px] text-[10px] text-neutral-400">{project.desc}</p>
-                                
-                                <Link href={project.githubLink} target="_blank">
-                                    <button className={`${textColor[index]} text-neutral-600 text-sm`}>GitHub</button>
-                                </Link>
-                                </div>
+                                <motion.div 
+                                    className="flex items-center justify-between gap-4"
+                                    initial={{ opacity: 0, y: 20 }}
+                                    whileInView={{ opacity: 1, y: 0 }}
+                                    transition={{ duration: 0.4, delay: index * 0.1 + 0.4 }}
+                                    viewport={{ once: true }}
+                                >
+                                    <p className=" sm:text-[13px] text-[10px] text-neutral-400">{project.desc}</p>
+                                    
+                                    <Link href={project.githubLink} target="_blank">
+                                        <motion.button 
+                                            className={`${textColor[index]} text-neutral-600 text-sm`}
+                                            whileHover={{ scale: 1.05 }}
+                                            whileTap={{ scale: 0.95 }}
+                                            transition={{ duration: 0.2 }}
+                                        >
+                                            GitHub
+                                        </motion.button>
+                                    </Link>
+                                </motion.div>
                             </div>
-                        </div>
+                        </motion.div>
                     ))}
                 </div>
             </ViewContainer>
             
-        </div>
+        </motion.div>
     )
 }
 

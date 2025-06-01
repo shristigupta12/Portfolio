@@ -54,7 +54,7 @@ export default function LayoutAnimation() {
 
   return (
     <div 
-      className="bg-white py-10 border max-sm:h-[35vh] " 
+      className="bg-white py-10 border max-sm:h-[42vh] flex items-center justify-center " 
       style={{
         backgroundImage: `
           radial-gradient(circle, #e5e5e5 1px, transparent 1px)

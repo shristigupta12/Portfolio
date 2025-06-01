@@ -27,7 +27,7 @@ export default function SplashWrapper({ children }) {
   return (
     <>
       <Navbar/>
-      <div className='max-sm:w-[450px]'>
+      <div className='max-sm:w-[100vw]'>
         {children}
       </div>
     </>

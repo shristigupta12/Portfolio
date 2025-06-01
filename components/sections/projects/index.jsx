@@ -61,7 +61,7 @@ const Projects = () => {
                     {ProjectsData.map((project, index)=>(
                         <motion.div 
                             key={index} 
-                            className={`flex items-center gap-6 shadow-sm border rounded-[10px] p-4 sm:w-[50vw] w-[90vw] sm:h-[70vh] h-[32vh] hover:shadow-md bg-white transition-shadow duration-300 ease-in-out ${shadowClasses[index]} $ ${borderColor[index]}`}
+                            className={`flex items-center gap-6 shadow-sm border rounded-[10px] p-4 sm:w-[50vw] w-[90vw] sm:h-[70vh] h-[38vh] hover:shadow-md bg-white transition-shadow duration-300 ease-in-out ${shadowClasses[index]} $ ${borderColor[index]}`}
                             initial={{ opacity: 0, y: 50, scale: 0.9 }}
                             whileInView={{ opacity: 1, y: 0, scale: 1 }}
                             transition={{ 

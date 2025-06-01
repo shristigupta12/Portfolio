@@ -45,7 +45,7 @@ const Home = ()=>{
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ delay: 1.8, duration: 0.6 }}
                 >
-                    <p>A passionate frontend engineer with a love for creating seamless and engaging user experiences. From building intuitive user interfaces to engineering AI-powered solutions that scale. Always up for exploring and learning new things.</p>
+                    <p>A passionate frontend engineer with a love for creating seamless and engaging user experiences. Building intuitive user interfaces to engineering AI-powered solutions that scale.</p>
                 </motion.div>
                 <motion.div 
                     className="w-full flex max-md:justify-center"

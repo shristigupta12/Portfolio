@@ -6,10 +6,10 @@ const Experience = () => {
 
 
     return(
-        <div id="#experience" className="flex flex-col gap-18 text-neutral-600 w-full overflow-x-hidden">
+        <div id="#experience" className="flex flex-col gap-18 py-20 text-neutral-600 w-full overflow-x-hidden">
             <ViewContainer>
                 <div className="flex flex-col gap-4">
-                    <h1 className="font-semibold text-xl max-md:text-lg ">Experience</h1>
+                    <h1 className="font-semibold text-xl max-md:text-lg ">Work</h1>
                     <div className="grid gap-3 w-full">
                         {ExperienceData.map((exp, index)=>(
                                 <div key={index} className="flex flex-col gap-1">

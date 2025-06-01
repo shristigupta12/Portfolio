@@ -7,7 +7,7 @@ import Link from 'next/link'
 
 const Projects = () => {
     return(
-        <div className="flex flex-col gap-18 text-neutral-700 w-full px-6 max-md:py-0 overflow-x-hidden" id="projects">
+        <div className="flex flex-col gap-18 text-neutral-700 w-full px-6 py-20 overflow-x-hidden" id="projects">
             <ViewContainer className="min-xl:w-[1050px] flex flex-col gap-4">
                 <h1 className="font-semibold text-xl max-md:text-lg">Projects</h1>
                 <div className="grid gap-3 w-full">

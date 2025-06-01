@@ -1,35 +1,67 @@
 import { ViewContainer } from "@/components/layouts/view-container"
-import Image from "next/image"
-import { Button } from "@/components/ui/button"
 import Link from 'next/link'
-
+import LayoutAnimation from "./-components/layout-animation"
+import { motion } from "framer-motion"
 
 const Home = ()=>{
     return(
-        <ViewContainer id="home">
-        <section className="flex h-full justify-between gap-12 max-md:flex-col max-md:mt-[-25px] ">
-            <div className="flex flex-col gap-5 max-md:gap-5  text-neutral-700 max-sm:mt-3 ">
-                <div className="flex min-[500px]:flex-col font-semibold text-3xl max-[500px]:text-2xl font-sans max-sm:gap-2">
-                    <h1 >Hey there,</h1>
-                    <h1>{`I'm Shristi 🌻`}</h1>
-                </div>
-                <div className="flex gap-3 flex-col max-[500px]:text-[14px] text-[15px] text-neutral-600">
-                    <p>A passionate frontend engineer with a love for creating seamless and engaging user experiences.</p>
-                    <p>From building intuitive user interfaces to engineering AI-powered solutions that scale.</p>
-                    <p>Always up for exploring and learning new things.</p>
-                    <div className="w-full flex max-md:justify-center">
-                        <Link href="https://drive.google.com/file/d/188_sorZWyNW0eZmnpbA3U-SIk0rV2ZwZ/view?usp=drive_link">
-                        <button variant="ghost" className="text-sm w-fit text-neutral-400 underline transition-all hover:scale-105 hover:text-amber-600 ">{"Resume ->"}</button>
-                        </Link>
-                    </div>
-                </div>
+        <section 
+            className="flex justify-between gap-24 pt-20 flex-col max-md:mt-[-25px] min-h-screen"
+            style={{
+                background: 'radial-gradient(circle at bottom left, #e0e7ff 40%, #ffffff 60%)',
+            }}
+        >
+        <ViewContainer id="home"  >
+            <div className="flex flex-col gap-8 max-md:gap-5  text-neutral-700 max-sm:mt-3 ">
+                <motion.p
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.6 }}
+                >
+                    Hi, I'm 
+                </motion.p>
+                <motion.div 
+                    className="flex items-end text-7xl max-[500px]:text-2xl font-sans max-sm:gap-2"
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ delay: 0.8, duration: 0.6 }}
+                >
+                    <h1 className="">{`Shristi Gupta `}</h1>
+                        <motion.span
+                            animate={{ y: [-4, -8, -4] }}
+                            transition={{
+                                duration: 1,
+                                repeat: 10,
+                                ease: "easeInOut"
+                            }}
+                            className="text-5xl"
+                        >
+                            🌻
+                        </motion.span>
+                </motion.div>
+                <motion.div 
+                    className="flex gap-3 flex-col items-center max-[500px]:text-[14px] text-[15px] text-neutral-600"
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ delay: 1.8, duration: 0.6 }}
+                >
+                    <p>A passionate frontend engineer with a love for creating seamless and engaging user experiences. From building intuitive user interfaces to engineering AI-powered solutions that scale. Always up for exploring and learning new things.</p>
+                </motion.div>
+                <motion.div 
+                    className="w-full flex max-md:justify-center"
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ delay: 2.5, duration: 0.8 }}
+                >
+                    <Link href="https://drive.google.com/file/d/188_sorZWyNW0eZmnpbA3U-SIk0rV2ZwZ/view?usp=drive_link">
+                    <button variant="ghost" className="text-sm w-fit text-neutral-400 underline transition-all  hover:text-amber-600 ">{"Resume ->"}</button>
+                    </Link>
+                </motion.div>
             </div>
-                <div className="relative max-sm:flex max-sm:items-center max-sm:justify-center max-sm:gap-5"> 
-                    <Image src={'/utils/brush-stroke-img.png'} alt="avatar" width={450} height={550} className="-mt-5 max-sm:mt-0 max-sm:w-[400px] max-sm:h-[350px]"/>
-                    <Image src={'/utils/portfolio-profile.png'} alt="avatar" width={230} height={330} className=" absolute top-0 max-sm:w-[200px] max-sm:h-[300px]"/>
-                </div>
-        </section>
         </ViewContainer>
+                <LayoutAnimation />
+                {/* <Skills /> */}
+        </section>
     )
 }
 

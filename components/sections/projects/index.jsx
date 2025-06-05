@@ -5,36 +5,36 @@ import Link from 'next/link'
 import { motion } from "framer-motion"
 
 const shadowClasses = [
+    "hover:shadow-green-200",
     "hover:shadow-blue-200",
     "hover:shadow-purple-200", 
     "hover:shadow-[#DFD2C6]",
     "hover:shadow-neutral-200",
     "hover:shadow-pink-200",
-    "hover:shadow-green-200",
-    "hover:shadow-red-200",
     "hover:shadow-yellow-200",
+    "hover:shadow-red-200",
 ]
 
 const textColor = [
+    "hover:text-green-700",
     "hover:text-blue-700",
     "hover:text-purple-700",
     "hover:text-[#B3937A]",
     "hover:text-neutral-900",
     "hover:text-pink-700",
-    "hover:text-green-700",
-    "hover:text-red-700",
     "hover:text-yellow-700",
+    "hover:text-red-700",
 ]
 
 const borderColor = [
+    "hover:border-green-200",
     "hover:border-blue-200",
     "hover:border-purple-200",
     "hover:border-[#DFD2C6]",
     "hover:border-neutral-200",
     "hover:border-pink-200",
-    "hover:border-green-200",
-    "hover:border-red-200",
     "hover:border-yellow-200",
+    "hover:border-red-200",
 ]
 
 const Projects = () => {

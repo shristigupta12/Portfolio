@@ -1,6 +1,14 @@
 
 const ProjectsData = [
     {
+        name: "Visual Auth Flow Creation",
+        desc: "A React Flow-based visual editor for designing and configuring interactive call flows with customizable nodes and real-time state management.",
+        imageUrl: "/images/react-auth-flow.png",
+        techStack:["Next.js", "TypeScript", "TailwindCSS", "Zustand", "React Flow"],
+        githubLink: "https://github.com/shristigupta12/sarvam-ai-assignment",
+        link: "https://sarvam-ai-assignment-six.vercel.app/"
+    },
+    {
         name: "AI Search and Chat",
         desc: "A full-stack AI chat application with Google Authentication, personalized user sessions, real-time message history, and enhanced UX using Next.js, TypeScript, Supabase, and OpenAI's GPT-4o-mini.",
         imageUrl: "/images/ai-search-and-chat.png",

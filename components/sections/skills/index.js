@@ -50,7 +50,7 @@ export default function Skills() {
           viewport={{ once: true }}
           className="text-center "
         >
-          <p className="text-lg  text-neutral-600">love learning new things ♡</p>
+          <p className="text-lg  text-neutral-600">love learning new things</p>
         </motion.div>
         </div>
 

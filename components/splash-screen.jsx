@@ -54,7 +54,7 @@ export default function SplashScreen({ onComplete }) {
             </span>
           </h1>
           <p className="text-lg text-gray-600 font-light max-w-md mx-auto leading-relaxed">
-            Glad you stopped by ♡
+            Glad you stopped by
           </p>
         </div>
        

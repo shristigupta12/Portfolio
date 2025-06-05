@@ -34,11 +34,7 @@ const     ContactData = [
     //     icon:<Code className='w-4 max-md:w-3'/>,
     //     link:"https://www.leetcode.com/ShristiGupta12"
     // },
-    {
-        media:"Instagram",
-        icon:<Instagram className='w-4 max-md:w-3'/>,
-        link:"https://www.instagram.com/shrisstiiiii/"
-    }
+  
 ]
 
 export {ContactData}

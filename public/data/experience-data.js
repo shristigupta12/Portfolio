@@ -10,7 +10,7 @@ const ExperienceData = [
       "Contributed to Xyne, Juspay's AI-first Search & Answer Engine, by building features like custom chat emoticons, reusable React Native (Expo) components, and cross-platform UI experiences.",
       "Automated the changelog workflow by generating release notes from branch changes and creating Bitbucket pull requests automatically, reducing manual release effort."
     ],
-    icon: "https://juspay.io/juspay-full-logo-dark-mode.svg"
+    icon: "https://juspay.io/juspaylogo.svg"
   },
     {
       Designation: "Founding Software Engineer, Vacademy",

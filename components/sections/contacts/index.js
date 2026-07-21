@@ -10,14 +10,14 @@ const Contacts = () =>{
             <ViewContainer className="grid sm:gap-8 gap-4">
                 <div className="grid font-semibold sm:text-4xl sm:gap-2 gap-1 text-lg ">
                 <h1 className="text-neutral-600">Want to get in touch?</h1>
-                <Link href="mailto:shristigupta12@gmail.com">
+                <Link href="mailto:shristiguptawork@gmail.com">
                     <h1 className="text-neutral-400 hover:text-amber-600">{"shristiguptawork@gmail.com -->"}</h1>
                 </Link>
                 </div>
                 <div className="flex justify-between items-center  ">
                     <div className="flex gap-1 sm:text-sm text-[10px] sm:items-center ">
                         <MapPin className="w-4 max-md:w-3"/>
-                        <p >Bhopal, India</p>
+                        <p >Bengaluru, India</p>
                     </div>
                     <div className="grid grid-cols-3 sm:gap-3 gap-1">
                     {ContactData.map((contact, index)=>(

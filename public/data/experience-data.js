@@ -1,7 +1,20 @@
 const ExperienceData = [
+  {
+    Designation: "Design/UI Engineer, Juspay",
+    Duration: "Aug, 2025 – June, 2026",
+    CompanyLink: "https://juspay.io/in",
+    LinkName: "juspay.io ->",
+    description: [
+      "Built reusable tokenized UI components for Juspay's Blend Design System using React, TypeScript, and Tailwind CSS, helping create scalable and consistent interfaces across products.",
+      "Developed AI-powered data visualizations for Breeze by implementing interactive Bar, Line, Pie, and Doughnut charts using Svelte.",
+      "Contributed to Xyne, Juspay's AI-first Search & Answer Engine, by building features like custom chat emoticons, reusable React Native (Expo) components, and cross-platform UI experiences.",
+      "Automated the changelog workflow by generating release notes from branch changes and creating Bitbucket pull requests automatically, reducing manual release effort."
+    ],
+    icon: "https://juspay.io/juspay-full-logo-dark-mode.svg"
+  },
     {
       Designation: "Founding Software Engineer, Vacademy",
-      Duration: "Nov, 2024 – Present",
+      Duration: "Nov, 2024 – June, 2025",
       CompanyLink: "https://www.vacademy.io/",
       LinkName: "vacademy.io ->",
       description: [

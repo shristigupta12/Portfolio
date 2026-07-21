@@ -53,7 +53,7 @@ const Home = ()=>{
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ delay: 2.5, duration: 0.8 }}
                 >
-                    <Link href="https://drive.google.com/file/d/1r99PIxRcbule9qwO6IzKvMo2BamkP3Q2/view?usp=sharing">
+                    <Link href="https://drive.google.com/file/d/1oqBssOZ7mZtC0zY7fzNJL9p5Y2b21sGx/view?usp=drive_link">
                     <button variant="ghost" className="text-sm w-fit text-neutral-400 underline transition-all  hover:text-neutral-600 ">{"Resume ->"}</button>
                     </Link>
                 </motion.div>
